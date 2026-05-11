@@ -1,13 +1,12 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080',
   headers: {
     'Content-Type': 'application/json',
   },
 })
 
-// automatically attach JWT token to every request
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token')
   if (token) {
@@ -16,7 +15,6 @@ api.interceptors.request.use((config) => {
   return config
 })
 
-// automatically handle 401 — redirect to login if token expired
 api.interceptors.response.use(
   (response) => response,
   (error) => {
