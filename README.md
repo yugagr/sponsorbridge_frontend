@@ -1,16 +1,29 @@
-# React + Vite
+# SponsorBridge 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack influencer-brand deal management platform.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+- Frontend: https://sponsorbridge-frontend.vercel.app
+- Backend API: https://sponsorbridge-backend-1.onrender.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
+- Backend: Spring Boot 3, Spring Security, JWT, JPA, Hibernate, MySQL
+- Frontend: React 18, Vite, TailwindCSS, Framer Motion, Axios
 
-## React Compiler
+## ✨ Features
+- JWT Authentication with role-based access (Influencer & Brand)
+- Complete deal lifecycle management
+- Deliverable tracking and approval system
+- Payment release system
+- Reviews and ratings
+- Influencer discovery with filters
+- Real-time dashboard
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
+# Backend
+cd sponsorbridge
+mvn spring-boot:run
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Frontend
+cd sponsorbridge-frontend
+npm install && npm run dev
